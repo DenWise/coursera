@@ -1,0 +1,17 @@
+mode: set
+github.com/denwise/coursera/coursera_4w/testing/server.go:20.54,22.17 2 1
+github.com/denwise/coursera/coursera_4w/testing/server.go:22.17,25.3 2 1
+github.com/denwise/coursera/coursera_4w/testing/server.go:25.8,28.3 2 1
+github.com/denwise/coursera/coursera_4w/testing/server.go:31.61,34.16 3 1
+github.com/denwise/coursera/coursera_4w/testing/server.go:37.2,40.16 3 1
+github.com/denwise/coursera/coursera_4w/testing/server.go:44.2,47.16 3 1
+github.com/denwise/coursera/coursera_4w/testing/server.go:50.2,50.20 1 1
+github.com/denwise/coursera/coursera_4w/testing/server.go:34.16,36.3 1 0
+github.com/denwise/coursera/coursera_4w/testing/server.go:40.16,42.3 1 0
+github.com/denwise/coursera/coursera_4w/testing/server.go:47.16,49.3 1 1
+github.com/denwise/coursera/coursera_4w/testing/server.go:54.60,56.13 2 1
+github.com/denwise/coursera/coursera_4w/testing/server.go:57.12,59.58 2 1
+github.com/denwise/coursera/coursera_4w/testing/server.go:60.16,62.61 2 1
+github.com/denwise/coursera/coursera_4w/testing/server.go:63.23,65.38 2 1
+github.com/denwise/coursera/coursera_4w/testing/server.go:66.26,67.14 1 1
+github.com/denwise/coursera/coursera_4w/testing/server.go:68.10,69.48 1 1

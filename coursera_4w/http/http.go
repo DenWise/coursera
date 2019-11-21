@@ -5,24 +5,56 @@ import (
 	"net/http"
 )
 
-func handler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintln(w,"Hello, I'm your first http response")
-	w.Write([]byte("Horay!!!"))
+type Handler struct {
+	Name string
+}
+
+func (h *Handler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintln(w, "Handler: " + h.Name, "URL: " + r.URL.String())
 }
 
 func main() {
-	http.HandleFunc("/page",
-		func(w http.ResponseWriter, r *http.Request) {
-			fmt.Fprintln(w, "Single page: ", r.URL.String())
-		})
+	//rootHandler := &Handler{Name:"root"}
+	//http.Handle("/", rootHandler)
+	//
+	//testHandler := &Handler{Name:"test"}
+	//http.Handle("/test/", testHandler)
+	//
+	//fmt.Println("Starting server at :8082")
+	//http.ListenAndServe(":8082", nil)
 
-	http.HandleFunc("/pages/",
-		func(w http.ResponseWriter, r *http.Request) {
-			fmt.Fprintln(w, "Multiple pages: ", r.URL.String())
-		})
+	//mux := http.NewServeMux()
+	//mux.Handle("/", rootHandler)
+	//mux.Handle("/test/", testHandler)
+	//
+	//server := http.Server{
+	//	Addr:              ":8082",
+	//	Handler:           mux,
+	//	ReadTimeout:       10 * time.Second,
+	//	WriteTimeout:      10 * time.Second,
+	//}
+	//
+	//fmt.Println("Starting server at :8082")
+	//server.ListenAndServe()
 
-	http.HandleFunc("/",handler)
+	go startServer(":8082")
+	startServer(":8084")
+}
 
-	fmt.Println("Starting server at :8082")
-	http.ListenAndServe(":8082", nil)
+func startServer(addr string) {
+	mux := http.NewServeMux()
+	mux.HandleFunc("/", func (w http.ResponseWriter, r *http.Request) {
+		fmt.Fprintln(w, "Addr: " + addr, "URL: " + r.URL.String())
+	})
+	mux.HandleFunc("/test/", func (w http.ResponseWriter, r *http.Request) {
+		fmt.Fprintln(w, "Addr: " + addr, "URL: " + r.URL.String())
+	})
+
+	server := http.Server{
+		Addr:              addr,
+		Handler:           mux,
+	}
+
+	fmt.Println("Starting server at ", addr)
+	server.ListenAndServe()
 }
