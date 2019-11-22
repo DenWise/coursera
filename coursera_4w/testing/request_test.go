@@ -28,7 +28,7 @@ func TestGetUser(t *testing.T) {
 	}
 
 	for caseNum, item := range cases {
-		url := "http://example.com/api/user?id=" + item.ID
+		url := "http://gagaga.com/api/user?id=" + item.ID
 		req := httptest.NewRequest(http.MethodGet, url, nil) // mock request
 		w := httptest.NewRecorder() // response writer for GetUser
 
