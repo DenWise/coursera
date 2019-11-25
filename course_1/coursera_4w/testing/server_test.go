@@ -49,7 +49,7 @@ func TestCartCheckout(t *testing.T) {
 	ts := httptest.NewServer(http.HandlerFunc(CheckoutDummy))
 
 	for caseNum, item := range cases {
-		c := &Cart{PaymentApiURL:ts.URL}
+		c := &Cart{PaymentApiURL: ts.URL}
 		result, err := c.Checkout(item.ID)
 
 		if err != nil && !item.IsError {

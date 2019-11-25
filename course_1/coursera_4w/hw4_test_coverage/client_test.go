@@ -47,7 +47,7 @@ type TestAccessCase struct {
 
 type TestLimitOffsetCase struct {
 	Request SearchRequest
-	Error bool
+	Error   bool
 }
 
 type TestBadServerCase struct {
@@ -56,9 +56,9 @@ type TestBadServerCase struct {
 }
 
 type TestFindUserCase struct {
-	Request SearchRequest
+	Request  SearchRequest
 	Response *SearchResponse
-	Error bool
+	Error    bool
 }
 
 func TestAccessToken(t *testing.T) {
@@ -304,9 +304,9 @@ func TestFindUsers(t *testing.T) {
 
 func SearchServer(w http.ResponseWriter, r *http.Request) {
 	var (
-		request SearchRequest
+		request    SearchRequest
 		orderField = "Name"
-		founded = make([]XMLUser,0,100)
+		founded    = make([]XMLUser,0,100)
 	)
 
 	incomingToken := r.Header.Get("AccessToken")
@@ -378,10 +378,10 @@ func getXMLUsers() []XMLUser {
 	}
 	defer xmlFile.Close()
 
-	xmlAsByteArray, _ := ioutil.ReadAll(xmlFile)
+	xmlAsSliceByte, _ := ioutil.ReadAll(xmlFile)
 
 	var root XMLRoot
-	err = xml.Unmarshal(xmlAsByteArray, &root)
+	err = xml.Unmarshal(xmlAsSliceByte, &root)
 	if err != nil {
 		log.Fatal("cannot unmarshal data xml", err)
 	}
