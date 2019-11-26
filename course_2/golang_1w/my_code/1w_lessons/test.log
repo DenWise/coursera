@@ -1,0 +1,12 @@
+{"level":"info","ts":1574696686.666574,"msg":"/{method 15 0 GET <nil>} {remote_addr 15 0 127.0.0.1:52730 <nil>} {url 15 0 / <nil>} {work_time 8 273372  <nil>}"}
+{"level":"info","ts":1574696687.0046818,"msg":"/notifications{method 15 0 GET <nil>} {remote_addr 15 0 127.0.0.1:52736 <nil>} {url 15 0 /notifications <nil>} {work_time 8 191146  <nil>}"}
+{"level":"info","ts":1574696687.180758,"msg":"/fonts/Roboto-Regular.ttf{method 15 0 GET <nil>} {remote_addr 15 0 127.0.0.1:52730 <nil>} {url 15 0 /fonts/Roboto-Regular.ttf <nil>} {work_time 8 41572  <nil>}"}
+{"level":"info","ts":1574696747.9135768,"msg":"/admin/{method 15 0 GET <nil>} {remote_addr 15 0 127.0.0.1:52730 <nil>} {url 15 0 /admin/ <nil>} {work_time 8 48226  <nil>}"}
+{"level":"info","ts":1574696748.4253397,"msg":"/favicon.ico{method 15 0 GET <nil>} {remote_addr 15 0 127.0.0.1:52730 <nil>} {url 15 0 /favicon.ico <nil>} {work_time 8 39528  <nil>}"}
+{"level":"info","ts":1574696752.3127441,"msg":"/{method 15 0 GET <nil>} {remote_addr 15 0 127.0.0.1:52730 <nil>} {url 15 0 / <nil>} {work_time 8 34503  <nil>}"}
+{"level":"info","ts":1574696752.608685,"msg":"/notifications{method 15 0 GET <nil>} {remote_addr 15 0 127.0.0.1:53330 <nil>} {url 15 0 /notifications <nil>} {work_time 8 113639  <nil>}"}
+{"level":"info","ts":1574696752.7681255,"msg":"/fonts/Roboto-Regular.ttf{method 15 0 GET <nil>} {remote_addr 15 0 127.0.0.1:52730 <nil>} {url 15 0 /fonts/Roboto-Regular.ttf <nil>} {work_time 8 39928  <nil>}"}
+{"level":"info","ts":1574696753.0645475,"msg":"/favicon.ico{method 15 0 GET <nil>} {remote_addr 15 0 127.0.0.1:52730 <nil>} {url 15 0 /favicon.ico <nil>} {work_time 8 32177  <nil>}"}
+{"level":"info","ts":1574696762.7801774,"msg":"/admin/users{method 15 0 GET <nil>} {remote_addr 15 0 127.0.0.1:52730 <nil>} {url 15 0 /admin/users <nil>} {work_time 8 75908  <nil>}"}
+{"level":"info","ts":1574696762.8331356,"msg":"/admin/users/{method 15 0 GET <nil>} {remote_addr 15 0 127.0.0.1:52730 <nil>} {url 15 0 /admin/users/ <nil>} {work_time 8 48235  <nil>}"}
+{"level":"info","ts":1574696763.5066712,"msg":"/favicon.ico{method 15 0 GET <nil>} {remote_addr 15 0 127.0.0.1:52730 <nil>} {url 15 0 /favicon.ico <nil>} {work_time 8 32513  <nil>}"}
