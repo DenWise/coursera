@@ -78,7 +78,7 @@ func main() {
 	fmt.Fprintln(out)
 
 	methods := make([]*Method, 0)
-	urls := make(map[string]string, 0)
+	urls := make(map[string]string)
 	handlers := make(map[string][]string)
 
 	for _, d := range node.Decls {
@@ -132,6 +132,9 @@ func main() {
 		if err != nil {
 			log.Fatal(err)
 		}
+		fmt.Fprintln(out)
 	}
+
+
 
 }
